@@ -1,9 +1,10 @@
         <!--Product Image-->
+				
         <!--Product Image click collapse the image-->
-        <a class="product-grid__product" >
+        <a class="product-grid__product" ng-show="show" ng-click="show=!show">
             <img class="product-grid__img" src="{{product.image}}"  sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="">
         </a>
-        <a class="product-grid__product">
+        <a class="product-grid__product" ng-click="show = !show" ng-show="!show">
             show image
         </a>
 
